@@ -8,23 +8,15 @@ Create folders at the project root, i.e., ``event``, ``news``, ``marker``. ``mar
 Download the file [masterfilelist.txt](http://data.gdeltproject.org/gdeltv2/masterfilelist.txt) and store it at the project root.
 
 ### 3. Run Python code to collect data ###
-*Store data in multiple files if the data may be very large.*
+*First crawl news*
 ```python
-python get_news_by_year_country.py 2020 1 US masterfilelist.txt
-python get_events_by_year_country.py 2020 1 US masterfilelist.txt
+python get_news_by_year_month_country.py 2020 1 US masterfilelist.txt
 
-python get_news_by_year_country.py 2020 2 US masterfilelist.txt
-python get_events_by_year_country.py 2020 2 US masterfilelist.txt
-
-python get_news_by_year_country.py 2020 3 US masterfilelist.txt
-python get_events_by_year_country.py 2020 3 US masterfilelist.txt
-
-python get_news_by_year_country.py 2020 4 US masterfilelist.txt
-python get_events_by_year_country.py 2020 4 US masterfilelist.txt
+python get_news_by_year_month_country.py 2017 12 NI masterfilelist.txt
 ```
-
-*Store data in one file.*
+*Then collect events*
 ```python
-python get_news_by_year_country.py 2017 1 NI masterfilelist.txt
-python get_events_by_year_country.py 2017 1 NI masterfilelist.txt
+python get_events_by_year_month_country.py 2020 1 US masterfilelist.txt
+
+python get_events_by_year_country.py 2017 12 NI masterfilelist.txt
 ```

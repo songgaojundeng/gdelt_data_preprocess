@@ -20,3 +20,6 @@ python get_events_by_year_month_country.py 2020 1 US masterfilelist.txt
 
 python get_events_by_year_country.py 2017 12 NI masterfilelist.txt
 ```
+
+## 🔗 Links
+[GDELT 2.0 Events!](https://blog.gdeltproject.org/gdelt-2-0-our-global-world-in-realtime/)
